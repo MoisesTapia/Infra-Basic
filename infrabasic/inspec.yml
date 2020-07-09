@@ -1,0 +1,13 @@
+name: infrabasic
+title: InSpec Profile
+maintainer: Moises Pablo Ortiz Tapia
+copyright: Moises Pablo Ortiz Tapia
+copyright_email: moisestapia741@gmail.com
+license: Apache-2.0
+summary: An InSpec Compliance Profile
+version: 0.0.1
+depends:
+  - name: inspec-aws
+    url: https://github.com/inspec/inspec-aws/archive/v1.13.0.zip
+supports:
+  platform: aws
