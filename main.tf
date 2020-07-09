@@ -4,8 +4,7 @@ provider "aws" {
 
 resource "aws_instance" "linux2" {
     instance_type   = "t2.micro"
-    ami             = "id_instance"
-
+    ami             = "ami-016b213e65284e9c9"
 
     tags = {
         
