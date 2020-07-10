@@ -34,4 +34,4 @@ With this `Inspec Profile` you can verify your infra, which was created with ter
 - [X] Run the following command: `./verify_infra.sh`
 - [X] Wait the report inside of folder.
 
-![verification](https://github.com/MoisesTapia/Infra-Basic/blob/master/images/terraformverify.png)
+![verification](https://github.com/MoisesTapia/Infra-Basic/blob/master/images/verify_infra.png)
