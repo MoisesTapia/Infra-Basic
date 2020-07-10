@@ -1,4 +1,4 @@
-# Infra-Basic
+# First Infra with terraform and verification with Chef Inspec
 
 ## This infra contain the follow features
 
@@ -10,3 +10,6 @@
 
 
 ![Map](https://github.com/MoisesTapia/Infra-Basic/blob/master/Untitled%20Diagram(1).png)
+
+
+# Verify the infra with inspec
