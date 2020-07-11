@@ -11,3 +11,24 @@ depends:
     url: https://github.com/inspec/inspec-aws/archive/v1.13.0.zip
 supports:
   platform: aws
+attributes:
+  - name: endpointname
+    required: false
+    description: this endpoint depends of region and ami
+    value: 'ec2.us-east-2.amazonaws.com'
+    type: string
+  - name: vpcstate
+    required: true
+    description: it's just a veridicatio od vpc state
+    value: 'available'
+    type: string
+  - name: region
+    required: true
+    description: region of infrabasic
+    value: 'us-east-2'
+    type: string
+  - name: defaultvpc
+    required: true
+    description: defaultvpc
+    value: 'vpc-00d1b91ae0395e8ae'
+    type: string
