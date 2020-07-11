@@ -1,6 +1,21 @@
 # copyright: 2018, Moises Pablo Ortiz Tapia
 # github https://github.com/MoisesTapia
+require 'json'
+content = File.read("/home/moisestapia/EMS/Terraform/Infra-Basic/infrabasic/files")
+params = JSON.parse(content)
 
+################### Instance EC2 ###################
+# Public IP
+public_ip_addrs = params['aws_security_group_public_ip']['value']
+
+# images id
+id_image = params['aws_instance']['value']
+
+# availability zone
+azone_var = params['vpc_cidr']['value']
+
+# Security Group IDS
+secgroup_ids = params['vpc_cidr']['value']
 
 title "Infra Basic"
 
@@ -13,8 +28,10 @@ control "Intance EC2" do
   describe aws_ec2_instance('i-0b95f7c75040cff5c') do
     it  { should_not have_roles }
     it  { should be_running }
-    its ('image_id') { should eq 'ami-016b213e65284e9c9' }
-    its ('availability_zone') { should eq "us-east-2b" }
+    its ('image_id') { should eq ['id_image'] }
+    its ('availability_zone') { should eq ['azone_var'] }
+    its('public_ip_address') { should eq ['public_ip_addrs'] }
+    its('security_group_ids') { should include ['secgroup_ids'] }
 
   end  
 end
@@ -33,7 +50,7 @@ end
 control "Security Group" do
   impact 1
   title "Verify the security group exist"
-  desc "with this control we can verufy the SG"
+  desc "with this control we can verufy the SesGrp"
 
   describe aws_security_group(group_name: 'terraform-example-sg') do
     it { should exist }
