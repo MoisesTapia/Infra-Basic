@@ -43,3 +43,23 @@ resource "aws_security_group" "instance" {
 
     }
 }
+
+#
+# output
+#
+
+output "security_group_id" {
+    value = "${aws_security_group.instance.id}"
+}
+output "aws_instance" {
+    value = "${aws_instance.linux2.id}"
+}
+
+output "aws_security_group_public_ip" {
+    value = "${aws_instance.linux2.public_ip}"
+}
+
+output "aws_security_group_egress_av_zone" {
+    value = "${aws_instance.linux2.availability_zone}"
+}
+
