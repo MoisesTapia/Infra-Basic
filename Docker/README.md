@@ -32,7 +32,7 @@ docker-compose up -d
 ```bash
 docker-compose stop
 ```
-after down services if you want enable again you just write this comand, wich enable the services
+after down services if you want enable again you just write this comand, which enable the services
 
 ```bash
 docker-compose start
