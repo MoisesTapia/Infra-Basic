@@ -1,0 +1,21 @@
+version: '3'
+
+services: 
+
+    jenkins:
+        container_name: jenkins
+        image:  jenkins/jenkins:lts
+        volumes: 
+            - $PWD/jenkins:/var/jenkins_home
+        ports:
+            - 8080:8080
+
+    grafana:
+
+        container_name: grafana
+        image: grafana/grafana:7.0.4
+        user: "1000"
+        volumes: 
+            - "$PWD/grafana:/var/lib/grafana"
+        ports: 
+            - 3000:3000
