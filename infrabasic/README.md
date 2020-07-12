@@ -29,6 +29,7 @@ We need export our AWS credentiasl in the shell:
 
 # Usage
 With this `Inspec Profile` you can verify your infra, which was created with terraform 
+- [X] Inside of folder `infrabasic` make a new folder and named it files, which contain the output of terraform
 - [X] Fisrt of all check that tour infra is up in aws
 - [X] Give execution permissions the file verify_infra.sh 
 - [X] Run the following command: `./verify_infra.sh`
