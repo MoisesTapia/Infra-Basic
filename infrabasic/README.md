@@ -1,6 +1,6 @@
 # Verify your infra with this InSpec Profile
 
-![incli](https://github.com/MoisesTapia/Infra-Basic/blob/master/images/terraform-verify.png)
+![incli](https://github.com/MoisesTapia/Infra-Basic/blob/master/images/inspec_verify_new.png)
 
 # Tools
 To verify our infrastructure we need have installed some tools like are:
