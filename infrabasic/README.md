@@ -16,11 +16,15 @@ We need export our AWS credentiasl in the shell:
 # Example configuration
     export AWS_ACCESS_KEY_ID="AKIAJUMP347SLS66IGCQ"
     export AWS_SECRET_ACCESS_KEY="vD2lfoNvPdwsofqyuO9jRuWUkZIMqisdfeFmkHTy7ON+w"
-    export AWS_REGION="eu-west-3"
-    export AWS_PROFILE=
+    export AWS_REGION="us-west-2"
+    export AWS_PROFILE="infrabasic"
 ```
 ## aws configure
+To configure your credential is necessary that you set up it of the follow way
+`aws configure`
+
 ```bash
+# Example configuration
     AWS Access Key ID [None]: AKIAJUMP347SLS66IGCQ
     AWS Secret Access Key [None]: vD2lfoNvPdwsofqyuO9jRuWUkZIMqisdfeFmkHTy7ON+w
     Default region name [None]: us-west-2
