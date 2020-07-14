@@ -1,5 +1,4 @@
-require 'json'
-content = File.read("/home/moisestapia/EMS/Terraform/Infra-Basic/infrabasic/files/terraform.json")
+content = inspec.profile.file("terraform.json")
 params = JSON.parse(content)
 
 # copyright: 2018, Moises Tapia
