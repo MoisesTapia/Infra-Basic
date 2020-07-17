@@ -9,6 +9,10 @@
 - [x] A default - Zone
 - [x] Inside containe a instance type t2.micro and within are running nginx
 
+## Graph
+
+![Graph](https://github.com/MoisesTapia/Infra-Basic/blob/master/map.png)
+
 
 
 ![Map](https://github.com/MoisesTapia/Infra-Basic/blob/master/images/Untitled%20Diagram(1).png)
