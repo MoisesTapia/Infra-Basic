@@ -8,8 +8,6 @@
 ![License](https://img.shields.io/github/license/MoisesTapia/Infra-Basic?style=plastic)
 ![fork](https://img.shields.io/github/forks/MoisesTapia/Infra-Basic?color=se&style=plastic)<br>
 
-![Customized Card](https://github-readme-stats.vercel.app/api/pin?username=moisestapia&repo=Infra-Basic&title_color=fff&icon_color=f9f9f9&text_color=9f9f9f&bg_color=151515) 
-
 ## This infra contain the follow features
 
 - [x] A Default - VPC
