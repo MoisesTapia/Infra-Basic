@@ -3,12 +3,12 @@ provider "aws" {
 }
 
 resource "aws_instance" "linux2" {
-    instance_type   = "t2.micro"
-    ami             = "ami-016b213e65284e9c9"
+    instance_type   = var.instance_type
+    ami             = var.ami
 
     tags = {
         
-        Name = "InfraBasic"
+        Name = var.tags
     }
 
     vpc_security_group_ids = [aws_security_group.instance.id]
@@ -24,13 +24,13 @@ resource "aws_instance" "linux2" {
 
 resource "aws_security_group" "instance" {
 
-    name    = "terraform-example-sg"
+    name    = var.name_sg
 
     ingress {
 
-        from_port   = 80
-        to_port     = 80
-        protocol    = "tcp"
+        from_port   = var.http_port
+        to_port     = var.http_port
+        protocol    = var.protocol
         cidr_blocks = ["0.0.0.0/0"]
     }
 
