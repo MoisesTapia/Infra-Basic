@@ -18,7 +18,7 @@ secgroup_ids = params['security_group_id']['value']
 
 ################### Internal VARS
 ENDPOINT_NAME = attribute('endpointname') #
-STATE_VPC = attribute('vpcstate')         # YOU CAN MODIIFY THIS ATTRIBUTES inspec.yml
+STATE_VPC = attribute('vpcstate')         # YOU CAN MODIFY THIS ATTRIBUTES inspec.yml
 REGION_INFRA = attribute('region')        #
 DEFAULT_VPC = attribute('defaultvpc')     #
 
