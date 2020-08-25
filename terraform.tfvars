@@ -1,7 +1,9 @@
 region          = "us-east-2"
-tags            = "InfraBasic"
+tags            = "Company_Name"
 instance_type   = "t2.micro"
 ami             = "ami-016b213e65284e9c9"
-name_sg         = "terraform-example-sg"
-http_port       = 80
-protocol        = "tcp"
+name_sg         = "Terraform-Company-sg"
+#http_port       = 80
+protocol_net    = "tcp"
+ingressrules    = [80]
+egressrules     = [80]
