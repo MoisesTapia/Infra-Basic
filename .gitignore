@@ -1,0 +1,11 @@
+.terraform/
+Docker/grafana/
+Docker/jenkins/
+Docker/state.txt
+infrabasic/files/
+nano.save
+report/
+terraform.tfplan
+terraform.tfstate
+terraform.tfstate.backup
+
