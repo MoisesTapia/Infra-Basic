@@ -74,7 +74,10 @@ control "Testing 04 - Security Group" do
   title "Verify the security group exist"
   desc "with this control we can verufy the SesGrp"
 
-  describe aws_security_group(group_name: 'terraform-example-sg') do
+  describe aws_security_group(group_name: 'Terraform-Company-sg') do
     it { should exist }
+    it { should allow_in(port: 80) }
+    it { should allow_in(port: 80, ipv4_range: '0.0.0.0/0') }
+    it { should allow_in(protocol: 'tcp', position: '1') }
   end
 end
