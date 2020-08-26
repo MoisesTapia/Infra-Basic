@@ -25,10 +25,10 @@ To configure your credential is necessary that you set up it of the follow way
 
 ```bash
 # Example configuration
-    AWS Access Key ID [None]: AKIAJUMP347SLS66IGCQ
-    AWS Secret Access Key [None]: vD2lfoNvPdwsofqyuO9jRuWUkZIMqisdfeFmkHTy7ON+w
-    Default region name [None]: us-west-2
-    Default output format [None]: json
+    AWS Access Key ID [None]: "AKIAJUMP347SLS66IGCQ"
+    AWS Secret Access Key [None]: "vD2lfoNvPdwsofqyuO9jRuWUkZIMqisdfeFmkHTy7ON+w"
+    Default region name [None]: "us-west-2"
+    Default output format [None]: "json"
 ```
 
 # Usage
