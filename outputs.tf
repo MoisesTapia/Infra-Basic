@@ -26,6 +26,7 @@ output "secgroup_av_zone" {
 output "vpc_group" {
     value = aws_instance.linux2.vpc_security_group_ids
 }
-#output "vpc_id" {
-#    value = ${aws_instance.linux2}
-#}
+
+output "vpc_id" {
+    value = data.aws_vpc.default_vpc.id
+}
