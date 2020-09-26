@@ -59,7 +59,8 @@ control "Testing 02 - VPC Check" do
 end
 
 control "Testing 03 - Region of Infra" do
-  impact 0.8
+
+  impact 'high'
   title "Verify de region"
   desc "Verify that ec2 instance are in the correct region with this control"
 
@@ -70,9 +71,9 @@ control "Testing 03 - Region of Infra" do
 end
 
 control "Testing 04 - Security Group" do
-  impact 1
+  impact 'critical'
   title "Verify the security group exist"
-  desc "with this control we can verufy the SesGrp"
+  desc "with this control we can verify the SesGrp"
 
   describe aws_security_group(group_name: 'Terraform-Company-sg') do
     it { should exist }
